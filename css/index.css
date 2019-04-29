@@ -66,4 +66,197 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+body {
+  max-width: 875px;
+  margin: 0 auto;
+}
 
+header {
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 450%;
+  width: 285px;
+  text-align: center;
+}
+
+button {
+	font-size: 100%;
+	font-family: inherit;
+	background: transparent;
+	border: solid 1px black;
+	width: 150px;
+	margin: 0 auto;
+}
+
+footer {
+	margin-top: 40px;
+}
+
+nav, nav > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul > li {
+  margin-right: 20%;
+  color: grey;
+}
+
+div.top-left {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+section.top {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+img.logo {
+  margin-left: 16%;
+  margin-top: -11px;
+}
+
+section.content {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 2.5% 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section.content > div {
+	padding: 20px 10px 20px 0;
+}
+
+.wrapperHalf {
+	width: 49%;
+	flex-grow: 2;
+}
+
+.middle-img {
+  margin: 15px 0;
+}
+
+.wrapperThird {
+	width: 33%;
+	flex-grow: 1;
+}
+
+.copyright {
+	text-align: center;
+	margin: 40px 0;
+}
+
+#phone {
+	margin: 15px 0;
+}
+
+
+
+/* Start Tablet Styles */
+
+
+
+@media (max-width: 800px) {
+
+  body {
+    width: 780px;
+    margin: 0 auto;
+  }
+
+  nav { 
+    display: block;
+  }
+
+  nav > ul {
+    margin-top: 125px;
+  }
+
+  nav > ul > li {
+    margin-right: 5%;
+  }
+
+  section.top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.content {
+    margin-top: -350px;
+  }
+
+  img.logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: -100px;
+  }
+
+  img.top-image {
+    display: block;
+    visibility: hidden;
+  }
+
+  img.middle-img {
+    width: 100%;
+  }
+}
+
+
+
+/* Start Phone Styles */
+
+
+
+@media (max-width: 500px) {
+  /* reset */
+
+  header, 
+  nav> ul, 
+  nav > ul > li {
+    margin: 0;
+  }
+
+  main, footer {
+    margin: 0 10px;
+  }
+
+  img.logo {
+    margin-top: -435px;
+    margin-bottom: 425px;
+  }
+
+  section.content {
+    flex-direction: column;
+  }
+
+  section.content > div {
+    width: 100%;
+  }
+
+  body {
+    width: 500px;
+  }
+
+  nav > ul {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid grey;
+  }
+
+  nav > ul > li {
+    padding: 20px 0;
+    border-top: 1px solid grey;
+    text-align: center;
+  }
+
+  img.logo {
+  }
+}
